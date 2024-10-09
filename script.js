@@ -1,4 +1,4 @@
-alert("lo que sea");
+
 
 let nombre = prompt ("¡Escribe tu nombre!");
 console.log(nombre)
@@ -6,19 +6,13 @@ console.log(nombre)
 let edad = prompt ("¿Qué edad tienes?");
 console.log(edad)
 
-let estudiaste = true
+let estudiaste = true;
 
-let saludo = `¡Hola Soy ${nombre} y tengo ${edad} años😎!`;
-console.log(saludo)
+console.log(`¡Hola Soy ${nombre} y tengo ${edad} años😎!`);
 
 
-let si = `¡${nombre} si estudiaste! ¡Aprobarás la materia!`
-
-let no = `¡${nombre} no estudiaste! ¡Reprobarás la materia!`
-
-if (estudiaste > true)
-{
-  alert (no);
+if(estudiaste) {
+  alert(`${nombre} si estudiaste, ¡Aprobarás la materia!`);
 } else {
-  alert (si);
+  alert(`${nombre} no estudiaste, ¡Aprobarás la materia!`);
 }
